@@ -1,0 +1,54 @@
+body{
+    color: blue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.global-nav {
+    height: 28px;
+    width: auto;
+    background-color: #545652;
+}
+
+.nav-linke {
+    height: 74px;
+    width: auto;
+    background-color: #EDF4ED;
+}
+
+.article {
+    width: 715px;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 150px;
+    float: left;
+    border-style: dashed;
+}
+
+.sort {
+    width: 675px;
+    height: 370px;
+    border-style: dashed;
+    margin-bottom: 35px;
+}
+
+.db-usr-profile {
+    width: 675px;
+    height: 85px;
+    border-style: dashed;
+}
+.sidebar {
+    float: right;
+    width: 300px;
+    height: 100%;
+    border-style: dashed;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    background-color: #FFF6ED;
+}
