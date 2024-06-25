@@ -1,10 +1,19 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
+import BlogPost from "../components/BlogPost.astro";
+import "../styles/global.css";
+const allPosts = await Astro.glob("/src/pages/posts/*.md");
 ---
 
 <div class="article">
     <div class="db-usr-profile"></div>
-    <div class="sort" id="note"></div>
+    <div class="sort" id="note">
+        <div class="note-header">
+            <ul>
+                {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} postDate={post.frontmatter.pubDate} content={post.frontmatter.description}/>)}
+            </ul>
+        </div>
+    </div>
     <div class="sort" id="book"></div>
     <div class="sort" id="photo"></div>
     <div class="sort" id="movie"></div>

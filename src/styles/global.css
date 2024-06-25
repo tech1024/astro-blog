@@ -1,23 +1,41 @@
-body{
-    color: blue;
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
 .global-nav {
     height: 28px;
     width: auto;
     background-color: #545652;
 }
 
-.nav-linke {
+
+.nav-primary {
     height: 74px;
     width: auto;
     background-color: #EDF4ED;
 }
 
 .article {
+    width: 715px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 150px;
+    float: left;
+    border-style: dashed;
+}
+
+.post {
+    width: 715px;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 150px;
+    float: left;
+    border-style: dashed;
+}
+
+.post-list {
     width: 715px;
     height: 100%;
     margin-top: 50px;
@@ -31,24 +49,259 @@ body{
     height: 370px;
     border-style: dashed;
     margin-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .db-usr-profile {
     width: 675px;
     height: 85px;
-    border-style: dashed;
 }
+
 .sidebar {
     float: right;
     width: 300px;
     height: 100%;
-    border-style: dashed;
     margin-right: 150px;
     margin-top: 50px;
 }
 
 .profile {
-    width: 300px;
     height: 300px;
+    width: 300px;
     background-color: #FFF6ED;
+}
+
+.avatar-jpg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.pl {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+
+.ll {
+    float: left;
+}
+
+.note {
+    font-size: 13px;
+    line-height: 1.62;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#db-nav-sns {
+    position: relative;
+    zoom: 1;
+    background: #edf4ed;
+}
+
+@media (max-width: 1024px) {
+    body #db-nav-sns .nav-primary {
+        width: 1000px;
+    }
+}
+
+.nav .nav-primary,
+.nav .nav-secondary {
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.nav {
+    width: 100%;
+    min-width: 1040px;
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 50px;
+}
+
+.nav .nav-logo {
+    float: left;
+    height: 56px;
+    width: 145px;
+    margin: 0 13px 0 0;
+    background-repeat: no-repeat;
+    background-position: 0px 12px;
+    background-size: 153px 30px;
+    background-image: url(https://img3.doubanio.com/dae/accounts/resources/78fadc7/sns/assets/lg_main@2x.png);
+
+}
+
+#db-nav-sns .nav-items li a {
+    float: left;
+    width: 100px;
+}
+
+.nav-items {
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+#db-nav-sns a:link,
+#db-nav-sns a:visited {
+    color: #072;
+}
+
+a:link {
+    color: #37a;
+    text-decoration: none;
+}
+
+a:link {
+    color: #37a;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+user agent stylesheet a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#db-nav-sns .nav-items li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+user agent stylesheet li {
+    text-align: -webkit-match-parent;
+}
+
+
+/* globe */
+a {
+    text-decoration: none;
+}
+
+
+html {
+    color: #111;
+    background: #fff
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+strong,
+th,
+var,
+optgroup {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: baseline
+}
+
+sub {
+    vertical-align: baseline
+}
+
+legend {
+    color: #000
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit
 }
